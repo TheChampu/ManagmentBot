@@ -4,9 +4,15 @@ WORKDIR /root/Champubot
 
 COPY . .
 
-RUN apt-get install -y ffmpeg python3-pip curl
-RUN pip3 install --upgrade pip setuptools
+# Update package lists and install necessary packages
+RUN apt-get update && apt-get install -y ffmpeg curl \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
+# Upgrade pip and setuptools
+RUN pip install --upgrade pip setuptools
+
+# Install Python dependencies
 RUN pip install -U -r requirements.txt
 
-CMD python3 -m Champubot
+CMD ["python3", "-m", "Champubot"]
