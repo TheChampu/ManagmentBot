@@ -10,7 +10,7 @@ beautifulsoup4==4.12.3
 bleach==6.2.0
 
 # ==== C ====
-cachetools==5.5.0
+cachetools==5.5.1
 
 cockroachdb
 
