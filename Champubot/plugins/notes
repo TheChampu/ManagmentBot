@@ -27,7 +27,7 @@ from Champubot.plugins.helper_funcs.string_handling import (
     markdown_to_html,
 )
 
-from .cust_filters import MessageHandlerChecker
+from .cust_filters import MessageHandlerChecker # type: ignore
 
 # <=======================================================================================================>
 
