@@ -1,0 +1,117 @@
+{
+   "name": "ᴄʜᴧᴍᴘᴜ ꭙ ᴍᴧɴᴧɢᴍᴇɴᴛ",
+   "description": "A dynamic and multi-functional bot designed to effortlessly manage and enhance Telegram group experiences.",
+   "logo": "https://telegra.ph/file/4d370b478d90d98709398.jpg",
+   "keywords": ["telegram", "modular", "group", "management", "Champu"],
+   "repository": "https://github.com/TheChampu/ManagmentBot",
+   "stack": "container",
+   "formation": {
+      "worker": {
+         "quantity": 1,
+         "size": "basic"
+      }
+   },
+   "addons": [
+      {
+         "plan": "heroku-postgresql",
+         "options": {
+            "version": "16"
+         }
+      }
+   ],
+   "env": {
+      "API_ID": {
+         "description": "Obtain this value from my.telegram.org/apps.",
+         "required": true,
+         "value": "29893020"
+      },
+      "API_HASH": {
+         "description": "Obtain this value from my.telegram.org/apps.",
+         "required": true,
+         "value": "28e79037f0b334ef0503466c53f08af5"
+      },
+      "DEL_CMDS": {
+         "description": "Set this to True to delete command messages from users without the necessary permissions.",
+         "value": "True"
+      },
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is.",
+         "required": true,
+         "value": "True"
+      },
+      "EVENT_LOGS": {
+         "description": "Channel for event logs to note down important bot-level events. Recommend making this public. Example: '-123456'",
+         "required": true,
+         "value": "-100"
+      },
+      "MESSAGE_DUMP": {
+         "description": "Support chat ID.",
+         "required": true,
+         "value": "-100"
+      },
+      "MONGO_DB_URI": {
+         "description": "Required for MongoDB database connections.",
+         "required": true,
+         "value": "mongodb+srv://yash:shivanshudeo@yk.6bvcjqp.mongodb.net/?retryWrites=true&w=majority&appName=yk"
+      },
+      "DATABASE_URL": {
+         "description": "Required for SQL database connections.",
+         "required": true,
+         "value": "postgres://ywxqbejw:7OcghgGl_qTSa6KeLJ1g_TrfBAlO82v6@rosie.db.elephantsql.com/ywxqbejw"
+      },
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": "6399386263"
+      },
+      "DEV_USERS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": "6399386263"
+      },
+      "DRAGONS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": ""
+      },
+      "STRICT_GBAN": {
+         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+         "value": "True"
+      },
+      "DEMONS": {
+         "description": "A space separated list of user IDs who can use Gban From Your Bot",
+         "required": false,
+         "value": ""
+      },
+      "TIGERS": {
+         "description": "A space separated list of user IDs who can not be banned by your Bot",
+         "required": false,
+         "value": "6399386263"
+      },
+      "WOLVES": {
+         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
+         "required": false,
+         "value": "6399386263"
+      },
+      "SUPPORT_CHAT": {
+         "description": "Your Telegram support group chat username. Users will reach out for assistance. Example: MyGroupChatUsernameBlah. Avoid pointing to Champu Support to prevent conflicts.",
+         "required": true,
+         "value": "TheChampuClub"
+      },
+      "SUPPORT_ID": {
+         "description": "Support chat ID.",
+         "required": true,
+         "value": "-1001897579809"
+      },
+      "DB_NAME": {
+         "description": "Your MongoDB name.",
+         "required": true,
+         "value": "ChampuDB"
+      },
+      "TOKEN": {
+         "description": "Bot token obtained from @BotFather on Telegram.",
+         "required": true,
+         "value": "2140728197:AAFCNtFARSSHdZI2dj1_5erimV73OMbIn0c"
+      }
+   }
+}
