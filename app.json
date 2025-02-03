@@ -111,7 +111,7 @@
       "TOKEN": {
          "description": "Bot token obtained from @BotFather on Telegram.",
          "required": true,
-         "value": "2140728197:AAFCNtFARSSHdZI2dj1_5erimV73OMbIn0c"
+         "value": "YourBotToken"
       }
    }
 }
