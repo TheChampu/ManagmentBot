@@ -15,7 +15,7 @@ cachetools==5.5.0
 cockroachdb
 
 # ==== D ====
-dateparser==1.2.0
+dateparser==1.2.1
 
 # ==== E ====
 emoji==2.14.0
